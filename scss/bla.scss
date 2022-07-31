@@ -1,0 +1,105 @@
+section {
+    .container {
+        .row {
+            article {
+                
+                .checked {
+                    color: orange;
+                }
+
+                cursor: pointer;
+
+                .description_box {
+                    p {
+                        font-size: 1em;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        padding: 0 8px;
+                    }
+                }
+
+                .img_box {
+                    height: 400px;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+
+                .about_hotel {
+                    height: 75%;
+                }
+
+                .rating_hotel {
+                    height: 25%;
+                    .userImg img {
+                        border: 1px solid var(--black);
+                        height: 60%;
+                        width: 50%;
+                    }
+                }
+
+            }
+            article:hover{
+                box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+            }
+        }
+    }
+}
+@media(max-width:992px) {
+    section {
+        .container {
+            .row {
+                article {
+                    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                    .description_box {
+                        p {
+                            font-size: 7.5px;
+                        }
+
+                        h6 {
+                            font-size: 0.8em;
+                        }
+
+                        nav {
+                            margin: 0;
+                            padding: 0;
+
+                            a {
+                                display: block;
+                                padding: 0 8px;
+                                font-size: 0.5em;
+                            }
+                        }
+
+                    }
+
+                    .img_box {
+                        height: 250px;
+                    }
+
+                    .rating_hotel {
+                        .userImg img {
+                            height: 50%;
+                            // width: 40%;
+                        }
+
+                        .fa-star {
+                            font-size: 0.5em;
+                        }
+
+                        .fa-star-half-o {
+                            font-size: 0.5em;
+                        }
+
+                        span {
+                            font-size: 0.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

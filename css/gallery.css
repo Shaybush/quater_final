@@ -1,0 +1,544 @@
+.box {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#rhodes.active {
+  display: block;
+}
+
+#rome.active {
+  display: block;
+}
+
+#budapest.active {
+  display: block;
+}
+
+#paris.active {
+  display: block;
+}
+
+#amsterdam.active {
+  display: block;
+}
+
+.strip {
+  min-height: 40vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://i.ibb.co/nfJmJP5/bg1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.strip h2 {
+  font-size: 4em;
+  text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+  color: #333;
+}
+
+@media (max-width: 992px) {
+  .strip h2 {
+    font-size: 2em;
+  }
+}
+main .container #rhodes {
+  background: white;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+main .container #rhodes .fa-star {
+  color: orange;
+}
+main .container #rhodes .fa-star-half-o {
+  color: orange;
+}
+main .container #rhodes .row article:first-of-type {
+  cursor: pointer;
+}
+main .container #rhodes .row article:first-of-type .box_rhodes {
+  transition: 1s;
+  height: 100%;
+  border: rgb(210, 210, 210) solid 0.3px;
+}
+main .container #rhodes .row article:first-of-type .box_rhodes .hotel_image {
+  background: url("https://i.ibb.co/4mhRqGv/Rhodes-Central-Suite.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #rhodes .row article:first-of-type .box_rhodes .hotel_image .sale_ad {
+  min-height: 250px;
+}
+main .container #rhodes .row article:first-of-type .box_rhodes:hover {
+  transform: scale(1.05);
+}
+main .container #rhodes .row article:first-of-type .box_rhodes:hover .hotel_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://i.ibb.co/4mhRqGv/Rhodes-Central-Suite.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #rhodes .row article:nth-of-type(2) {
+  cursor: pointer;
+}
+main .container #rhodes .row article:nth-of-type(2) .box_rhodes {
+  transition: 1s;
+  height: 100%;
+  border: rgb(210, 210, 210) solid 0.3px;
+}
+main .container #rhodes .row article:nth-of-type(2) .box_rhodes .hotel_image {
+  background: url("https://i.ibb.co/ZfG04gL/Me-Fo-Mi-Villa.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #rhodes .row article:nth-of-type(2) .box_rhodes .hotel_image .sale_ad {
+  min-height: 250px;
+}
+main .container #rhodes .row article:nth-of-type(2) .box_rhodes:hover {
+  transform: scale(1.05);
+}
+main .container #rhodes .row article:nth-of-type(2) .box_rhodes:hover .hotel_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://i.ibb.co/ZfG04gL/Me-Fo-Mi-Villa.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #rhodes .row article:nth-of-type(3) {
+  cursor: pointer;
+}
+main .container #rhodes .row article:nth-of-type(3) .box_rhodes {
+  transition: 1s;
+  border: rgb(210, 210, 210) solid 0.3px;
+}
+main .container #rhodes .row article:nth-of-type(3) .box_rhodes .hotel_image {
+  background: url("https://i.ibb.co/5TgHdbg/Secret-Garden-Old-Town.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #rhodes .row article:nth-of-type(3) .box_rhodes .hotel_image .sale_ad {
+  min-height: 250px;
+}
+main .container #rhodes .row article:nth-of-type(3) .box_rhodes:hover {
+  transform: scale(1.05);
+}
+main .container #rhodes .row article:nth-of-type(3) .box_rhodes:hover .hotel_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://i.ibb.co/5TgHdbg/Secret-Garden-Old-Town.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  main .container #rhodes span {
+    font-size: 0.8em;
+  }
+  main .container #rhodes p {
+    font-size: 0.7em;
+  }
+}
+main .container #rome {
+  background: white;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+main .container #rome .fa-star {
+  color: orange;
+}
+main .container #rome .fa-star-half-o {
+  color: orange;
+}
+main .container #rome .row article:first-of-type {
+  cursor: pointer;
+}
+main .container #rome .row article:first-of-type .box_rome {
+  transition: 1s;
+  height: 100%;
+  border: rgb(210, 210, 210) solid 0.3px;
+}
+main .container #rome .row article:first-of-type .box_rome .hotel_image {
+  background: url("https://i.ibb.co/smRw1zz/Teichnersuite.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #rome .row article:first-of-type .box_rome .hotel_image .sale_ad {
+  min-height: 250px;
+}
+main .container #rome .row article:first-of-type .box_rome:hover {
+  transform: scale(1.05);
+}
+main .container #rome .row article:first-of-type .box_rome:hover .hotel_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://i.ibb.co/smRw1zz/Teichnersuite.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #rome .row article:nth-of-type(2) {
+  cursor: pointer;
+}
+main .container #rome .row article:nth-of-type(2) .box_rome {
+  transition: 1s;
+  border: rgb(210, 210, 210) solid 0.3px;
+}
+main .container #rome .row article:nth-of-type(2) .box_rome .hotel_image {
+  background: url("https://i.ibb.co/GJmKL6j/Lemon-Tree-Apartment-Sistine-Chapel.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #rome .row article:nth-of-type(2) .box_rome .hotel_image .sale_ad {
+  min-height: 250px;
+}
+main .container #rome .row article:nth-of-type(2) .box_rome:hover {
+  transform: scale(1.05);
+}
+main .container #rome .row article:nth-of-type(2) .box_rome:hover .hotel_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://i.ibb.co/GJmKL6j/Lemon-Tree-Apartment-Sistine-Chapel.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #rome .row article:nth-of-type(3) {
+  cursor: pointer;
+}
+main .container #rome .row article:nth-of-type(3) .box_rome {
+  transition: 1s;
+  height: 100%;
+  border: rgb(210, 210, 210) solid 0.3px;
+}
+main .container #rome .row article:nth-of-type(3) .box_rome .hotel_image {
+  background: url("https://i.ibb.co/S3Lgg5d/Fori-Imperiali.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #rome .row article:nth-of-type(3) .box_rome .hotel_image .sale_ad {
+  min-height: 250px;
+}
+main .container #rome .row article:nth-of-type(3) .box_rome:hover {
+  transform: scale(1.05);
+}
+main .container #rome .row article:nth-of-type(3) .box_rome:hover .hotel_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://i.ibb.co/S3Lgg5d/Fori-Imperiali.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #rome .row article:nth-of-type(4) {
+  cursor: pointer;
+}
+main .container #rome .row article:nth-of-type(4) .box_rome {
+  transition: 1s;
+  border: rgb(210, 210, 210) solid 0.3px;
+}
+main .container #rome .row article:nth-of-type(4) .box_rome .hotel_image {
+  background: url("https://i.ibb.co/BBwkP4Y/Casa-V.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #rome .row article:nth-of-type(4) .box_rome .hotel_image .sale_ad {
+  min-height: 250px;
+}
+main .container #rome .row article:nth-of-type(4) .box_rome:hover {
+  transform: scale(1.05);
+}
+main .container #rome .row article:nth-of-type(4) .box_rome:hover .hotel_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://i.ibb.co/BBwkP4Y/Casa-V.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #rome .row article:nth-of-type(5) {
+  cursor: pointer;
+}
+main .container #rome .row article:nth-of-type(5) .box_rome {
+  transition: 1s;
+  border: rgb(210, 210, 210) solid 0.3px;
+}
+main .container #rome .row article:nth-of-type(5) .box_rome .hotel_image {
+  background: url("https://i.ibb.co/31xSvJ5/Piazza-Navona.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #rome .row article:nth-of-type(5) .box_rome .hotel_image .sale_ad {
+  min-height: 250px;
+}
+main .container #rome .row article:nth-of-type(5) .box_rome:hover {
+  transform: scale(1.05);
+}
+main .container #rome .row article:nth-of-type(5) .box_rome:hover .hotel_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://i.ibb.co/31xSvJ5/Piazza-Navona.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  main .container #rome span {
+    font-size: 0.8em;
+  }
+  main .container #rome p {
+    font-size: 0.7em;
+  }
+}
+main .container #budapest {
+  background: white;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+main .container #budapest .fa-star {
+  color: orange;
+}
+main .container #budapest .fa-star-half-o {
+  color: orange;
+}
+main .container #budapest .row article:first-of-type {
+  cursor: pointer;
+}
+main .container #budapest .row article:first-of-type .box_budapest {
+  height: 100%;
+  transition: 1s;
+  border: rgb(210, 210, 210) solid 0.3px;
+}
+main .container #budapest .row article:first-of-type .box_budapest .hotel_image {
+  background: url("https://i.ibb.co/LxDpVbP/Eurostars-Budapest-Center.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #budapest .row article:first-of-type .box_budapest .hotel_image .sale_ad {
+  min-height: 250px;
+}
+main .container #budapest .row article:first-of-type .box_budapest:hover {
+  transform: scale(1.05);
+}
+main .container #budapest .row article:first-of-type .box_budapest:hover .hotel_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://i.ibb.co/LxDpVbP/Eurostars-Budapest-Center.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #budapest .row article:nth-of-type(2) {
+  cursor: pointer;
+}
+main .container #budapest .row article:nth-of-type(2) .box_budapest {
+  height: 100%;
+  transition: 1s;
+  border: rgb(210, 210, 210) solid 0.3px;
+}
+main .container #budapest .row article:nth-of-type(2) .box_budapest .hotel_image {
+  background: url("https://i.ibb.co/dpTyfy6/Hotel-Orion-V-rkert.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #budapest .row article:nth-of-type(2) .box_budapest .hotel_image .sale_ad {
+  min-height: 250px;
+}
+main .container #budapest .row article:nth-of-type(2) .box_budapest:hover {
+  transform: scale(1.05);
+}
+main .container #budapest .row article:nth-of-type(2) .box_budapest:hover .hotel_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://i.ibb.co/dpTyfy6/Hotel-Orion-V-rkert.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #budapest .row article:nth-of-type(3) {
+  cursor: pointer;
+}
+main .container #budapest .row article:nth-of-type(3) .box_budapest {
+  transition: 1s;
+  border: rgb(210, 210, 210) solid 0.3px;
+}
+main .container #budapest .row article:nth-of-type(3) .box_budapest .hotel_image {
+  background: url("https://i.ibb.co/pxQ2Hzy/7-Seasons-Apartments-Budapest.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #budapest .row article:nth-of-type(3) .box_budapest .hotel_image .sale_ad {
+  min-height: 250px;
+}
+main .container #budapest .row article:nth-of-type(3) .box_budapest:hover {
+  transform: scale(1.05);
+}
+main .container #budapest .row article:nth-of-type(3) .box_budapest:hover .hotel_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://i.ibb.co/pxQ2Hzy/7-Seasons-Apartments-Budapest.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  main .container #budapest span {
+    font-size: 0.8em;
+  }
+  main .container #budapest p {
+    font-size: 0.7em;
+  }
+}
+main .container #paris {
+  background: white;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+main .container #paris .fa-star {
+  color: orange;
+}
+main .container #paris .fa-star-half-o {
+  color: orange;
+}
+main .container #paris .row article:first-of-type {
+  cursor: pointer;
+}
+main .container #paris .row article:first-of-type .box_paris {
+  transition: 1s;
+  border: rgb(210, 210, 210) solid 0.3px;
+}
+main .container #paris .row article:first-of-type .box_paris .hotel_image {
+  background: url("https://i.ibb.co/fYQ0QNp/Apartment-Op-ra.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #paris .row article:first-of-type .box_paris .hotel_image .sale_ad {
+  min-height: 250px;
+}
+main .container #paris .row article:first-of-type .box_paris:hover {
+  transform: scale(1.05);
+}
+main .container #paris .row article:first-of-type .box_paris:hover .hotel_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://i.ibb.co/fYQ0QNp/Apartment-Op-ra.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #paris .row article:nth-of-type(2) {
+  cursor: pointer;
+}
+main .container #paris .row article:nth-of-type(2) .box_paris {
+  transition: 1s;
+  height: 100%;
+  border: rgb(210, 210, 210) solid 0.3px;
+}
+main .container #paris .row article:nth-of-type(2) .box_paris .hotel_image {
+  background: url("https://i.ibb.co/3MRVJ83/Appartement-cosy-et-spacieux-Quartier-Montparnasse.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #paris .row article:nth-of-type(2) .box_paris .hotel_image .sale_ad {
+  min-height: 250px;
+}
+main .container #paris .row article:nth-of-type(2) .box_paris:hover {
+  transform: scale(1.05);
+}
+main .container #paris .row article:nth-of-type(2) .box_paris:hover .hotel_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://i.ibb.co/3MRVJ83/Appartement-cosy-et-spacieux-Quartier-Montparnasse.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #paris .row article:nth-of-type(3) {
+  cursor: pointer;
+}
+main .container #paris .row article:nth-of-type(3) .box_paris {
+  transition: 1s;
+  height: 100%;
+  border: rgb(210, 210, 210) solid 0.3px;
+}
+main .container #paris .row article:nth-of-type(3) .box_paris .hotel_image {
+  background: url("https://i.ibb.co/gmGg6C6/Spacious-apartment.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #paris .row article:nth-of-type(3) .box_paris .hotel_image .sale_ad {
+  min-height: 250px;
+}
+main .container #paris .row article:nth-of-type(3) .box_paris:hover {
+  transform: scale(1.05);
+}
+main .container #paris .row article:nth-of-type(3) .box_paris:hover .hotel_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://i.ibb.co/gmGg6C6/Spacious-apartment.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  main .container #paris span {
+    font-size: 0.8em;
+  }
+  main .container #paris p {
+    font-size: 0.7em;
+  }
+}
+main .container #amsterdam {
+  background: white;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+main .container #amsterdam .fa-star {
+  color: orange;
+}
+main .container #amsterdam .fa-star-half-o {
+  color: orange;
+}
+main .container #amsterdam .row article:first-of-type {
+  cursor: pointer;
+}
+main .container #amsterdam .row article:first-of-type .box_amsterdam {
+  height: 100%;
+  transition: 1s;
+  border: rgb(210, 210, 210) solid 0.3px;
+}
+main .container #amsterdam .row article:first-of-type .box_amsterdam .hotel_image {
+  background: url("https://i.ibb.co/1q0DWcX/Amsterdam-s-finest-Houseboat.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #amsterdam .row article:first-of-type .box_amsterdam .hotel_image .sale_ad {
+  min-height: 250px;
+}
+main .container #amsterdam .row article:first-of-type .box_amsterdam:hover {
+  transform: scale(1.05);
+}
+main .container #amsterdam .row article:first-of-type .box_amsterdam:hover .hotel_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://i.ibb.co/1q0DWcX/Amsterdam-s-finest-Houseboat.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #amsterdam .row article:nth-of-type(2) {
+  cursor: pointer;
+}
+main .container #amsterdam .row article:nth-of-type(2) .box_amsterdam {
+  transition: 1s;
+  height: 100%;
+  border: rgb(210, 210, 210) solid 0.3px;
+}
+main .container #amsterdam .row article:nth-of-type(2) .box_amsterdam .hotel_image {
+  background: url("https://i.ibb.co/LPS5vxg/B-B-Mondriaan.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #amsterdam .row article:nth-of-type(2) .box_amsterdam .hotel_image .sale_ad {
+  min-height: 250px;
+}
+main .container #amsterdam .row article:nth-of-type(2) .box_amsterdam:hover {
+  transform: scale(1.05);
+}
+main .container #amsterdam .row article:nth-of-type(2) .box_amsterdam:hover .hotel_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://i.ibb.co/LPS5vxg/B-B-Mondriaan.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #amsterdam .row article:nth-of-type(3) {
+  cursor: pointer;
+}
+main .container #amsterdam .row article:nth-of-type(3) .box_amsterdam {
+  transition: 1s;
+  height: 100%;
+  border: rgb(210, 210, 210) solid 0.3px;
+}
+main .container #amsterdam .row article:nth-of-type(3) .box_amsterdam .hotel_image {
+  background: url("https://i.ibb.co/K6r0PMr/Bed-Bike-Studio-Amsterdam.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .container #amsterdam .row article:nth-of-type(3) .box_amsterdam .hotel_image .sale_ad {
+  min-height: 250px;
+}
+main .container #amsterdam .row article:nth-of-type(3) .box_amsterdam:hover {
+  transform: scale(1.05);
+}
+main .container #amsterdam .row article:nth-of-type(3) .box_amsterdam:hover .hotel_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://i.ibb.co/K6r0PMr/Bed-Bike-Studio-Amsterdam.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  main .container #amsterdam span {
+    font-size: 0.8em;
+  }
+  main .container #amsterdam p {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 768px) {
+  details iframe {
+    width: 100%;
+    height: 200px;
+  }
+}/*# sourceMappingURL=gallery.css.map */

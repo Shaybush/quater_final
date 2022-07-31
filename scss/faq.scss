@@ -1,0 +1,50 @@
+:root {
+    /* colors */
+    --primary-50: #e0fcff;
+    --primary-100: #bef8fd;
+    --primary-200: #87eaf2;
+    --primary-300: #54d1db;
+    --primary-400: #38bec9;
+    --primary-500: #2cb1bc;
+    --primary-600: #14919b;
+    --primary-700: #0e7c86;
+    --primary-800: #0a6c74;
+    --primary-900: #044e54;
+    --primary-1000: #023a3f;
+    /* grey */
+    --grey-50: #f0f4f8;
+    --grey-100: #d9e2ec;
+    --grey-200: #bcccdc;
+    --grey-300: #9fb3c8;
+    --grey-400: #829ab1;
+    --grey-500: #627d98;
+    --grey-600: #486581;
+    --grey-700: #334e68;
+    --grey-800: #243b53;
+    --grey-900: #102a43;
+    /* rest of the colors */
+    --black: #333;
+    --white: #fff;
+    --red-light: #f8d7da;
+    --red-dark: #842029;
+    --green-light: #d1e7dd;
+    --green-dark: #0f5132;
+}
+main{
+    .accordion-item{
+        .accordion-header{
+            .accordion-button{
+                background-color: var(--grey-800);
+                color:White;
+            }
+            .accordion-button.collapsed{
+                background-color: var(--grey-400);
+                color:var(--black);
+            }
+        }
+        .accordion-body{
+            background: none;
+        }
+    }
+}
+  

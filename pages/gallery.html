@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../images/logo2.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI HotelMe-by-ShayBushary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="container-fluid">
+        <div class="container">
+            <div class="row align-items-center py-1 justify-content-between">
+                <div class="logo col-auto">
+                    <a href="../index.html" class="d-flex align-items-center">
+                        <h1>Hotel<span>Me</span></h1>
+                        <img src="../images/logo2.ico" alt="" width="25">
+                    </a>
+                </div>
+                <nav id="navbar" class="col-md d-md-flex align-items-center">
+                    <ul class="nav col  justify-content-end">
+                        <!-- <li class=" col-12 col-md-auto d-flex d-md-none justify-content-start mt-4 mb-5 text-danger"><i
+                                    id="close" class="fa fa-times" aria-hidden="true"></i></li> -->
+                        <li
+                            class="mt-5 mt-md-0 col-12 col-md-auto d-flex col col-md-auto justify-content-between align-items-center">
+                            <i class="fa fa-arrow-left d-md-none" aria-hidden="true"></i><a href="../index.html"><i
+                                    class="fa fa-home" aria-hidden="true"></i>Home</a>
+                        </li>
+                        <li
+                            class=" col-12 col-md-auto d-flex col col-md-auto justify-content-between align-items-center">
+                            <i class="fa fa-arrow-left d-md-none" aria-hidden="true"></i><a href="about.html"><i
+                                    class="fa fa-university" aria-hidden="true"></i>About</a>
+                        </li>
+                        <li
+                            class=" col-12 col-md-auto d-flex col col-md-auto justify-content-between align-items-center">
+                            <i class="fa fa-arrow-left d-md-none" aria-hidden="true"></i><a
+                                href="gallery.html">Hotels</a>
+                        </li>
+                        <li
+                            class=" col-12 col-md-auto d-flex col col-md-auto justify-content-between align-items-center">
+                            <i class="fa fa-arrow-left d-md-none" aria-hidden="true"></i><a href="trivia/trivia.html"><i
+                                    class="fa fa-question-circle" aria-hidden="true"></i>Trivia </a>
+                        </li>
+                        <li class=" col-12 col-md-auto d-flex col col-md-auto justify-content-end align-items-center"><a
+                                href="contact.html">Contact</a></li>
+                        <li class=" col-12 col-md-auto d-flex col col-md-auto justify-content-end align-items-center"><a
+                                href="faq.html">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="burger d-flex justify-content-end col d-md-none text-end">
+                    <!-- כדי שהסקריפט יעבוד צריך להוסיף איי די לבורגר -->
+                    <i id="burger" class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- strip start -->
+    <div class="strip container-fluid center">
+        <h2 id="id_h2">Accessible hotels<span id="id_span"></span></h2>
+    </div>
+    <!-- strip end -->
+
+    <!-- choose contries start -->
+    <div class="filter_country container-fluid center mt-4 mb-4 p-5">
+        <select onchange="change_Country()" class="form-select form-select-lg" aria-label="Default select example"
+            id="id_select">
+            <option selected value="all">Select City</option>
+            <option value="rhodes">Rhodes</option>
+            <option value="rome">Rome</option>
+            <option value="budapest">Budapest</option>
+            <option value="paris">Paris</option>
+            <option value="amsterdam">Amsterdam</option>
+        </select>
+    </div>
+    <!-- choose contries end -->
+
+
+    <!-- hotels contry start-->
+    <main class="container-fluid">
+        <div class="container p-2">
+            <div id="rhodes" class="box p-4 mb-4">
+                <h2 class="mb-3 fw-bold">Rhodos Hotels :</h2>
+                <div class="row">
+                    <!-- hotel one start -->
+                    <article
+                        onclick="window.open('https://www.booking.com/hotel/gr/rhodes-central-suite-rodos-pole.en.html?no_rooms=1&aid=2258643&group_adults=2','_blank');"
+                        class="col-xl-6 col-md-12 p-3">
+                        <div class="box_rhodes">
+                            <div class="hotel_image">
+                                <div class="sale_ad d-flex justify-content-start align-items-end">
+                                    <!-- <p class="bg-warning text-white m-0 p-2">best price</p> -->
+                                </div>
+                            </div>
+                            <div class="details border-bottom border-secondary p-2">
+                                <h4>rhodes central suite</h4>
+                                <div class="stars p-2">
+                                    <span class="text-secondary">best services</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                            <div class="price row justify-content-between p-2">
+                                <div class="left_side col-8">
+                                    <p class="text-secondary">Price per one person<br><span class="text-dark">For
+                                            customers on the
+                                            site</span></p>
+                                </div>
+                                <div class="right_side col-4 d-flex justify-content-end align-items-center"><span
+                                        class="text-warning">Starting at $400</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hotel one end -->
+
+                    <!-- hotel two start -->
+                    <article
+                        onclick="window.open('https://www.booking.com/hotel/gr/mefomi-villa.en.html?aid=2258643&no_rooms=1&group_adults=2','_blank');"
+                        class="col-xl-3 col-md-6 p-3">
+                        <div class="box_rhodes">
+                            <div class="hotel_image">
+                                <div class="sale_ad d-flex justify-content-start align-items-end">
+                                    <p class="bg-warning text-white m-0 p-2">best price</p>
+                                </div>
+                            </div>
+                            <div class="details border-bottom border-secondary p-2">
+                                <h4>MeFoMi Villa</h4>
+                                <div class="stars p-2">
+                                    <span class="text-secondary">best services</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                            <div class="price row justify-content-between p-2 align-items-center">
+                                <div class="left_side col-8">
+                                    <p class="text-secondary">Price per one person<br><span
+                                            class="d-xl-none text-dark">For customers on the
+                                            site</span></p>
+                                </div>
+                                <div class="right_side col-4 d-flex justify-content-end align-items-center"><span
+                                        class="text-warning">Starting at $539</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hotel two end -->
+
+                    <!-- hotel three start -->
+                    <article
+                        onclick="window.open('https://www.booking.com/hotel/gr/secret-garden-old-town-rodos-pole.en.html?aid=2258643&no_rooms=1&group_adults=2','_blank');"
+                        class="col-xl-3 col-md-6 p-3">
+                        <div class="box_rhodes">
+                            <div class="hotel_image">
+                                <div class="sale_ad d-flex justify-content-start align-items-end">
+                                    <p class="bg-warning text-white m-0 p-2">best price</p>
+                                </div>
+                            </div>
+                            <div class="details border-bottom border-secondary p-2">
+                                <h4>Secret Garden - Old Town</h4>
+                                <div class="stars p-2">
+                                    <span class="text-secondary">best services</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                            <div class="price row justify-content-between p-2">
+                                <div class="left_side col-8">
+                                    <p class="text-secondary">Price per one person<br><span
+                                            class="d-xl-none text-dark">For customers on the
+                                            site</span></p>
+                                </div>
+                                <div class="right_side col-4 d-flex justify-content-end align-items-center"><span
+                                        class="text-warning">Starting at $358</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hotel three end -->
+                </div>
+            </div>
+            <div id="rome" class="box p-4 mt-4 mb-4">
+                <h2 class="mb-3 fw-bold">Rome Hotels :</h2>
+                <div class="row p-2">
+                    <!-- hotel one start -->
+                    <article
+                        onclick="window.open('https://www.booking.com/hotel/it/teichnersuite.en.html?aid=2258643&no_rooms=1&group_adults=2','_blank');"
+                        class="col-xl-6 col-md-12 p-3">
+                        <div class="box_rome">
+                            <div class="hotel_image">
+                                <div class="sale_ad d-flex justify-content-start align-items-end">
+                                    <p class="bg-warning text-white m-0 p-2">best price</p>
+                                </div>
+                            </div>
+                            <div class="details border-bottom border-secondary p-2">
+                                <h4>Teichnersuite</h4>
+                                <div class="stars p-2">
+                                    <span class="text-secondary">best services</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                            <div class="price row justify-content-between p-2">
+                                <div class="left_side col-8">
+                                    <p class="text-secondary">Price per one person<br><span class="text-dark">For
+                                            customers on the
+                                            site</span></p>
+                                </div>
+                                <div class="right_side col-4 d-flex justify-content-end align-items-center"><span
+                                        class="text-warning">Starting at $622</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hotel one end -->
+
+                    <!-- hotel two start -->
+                    <article
+                        onclick="window.open('https://www.booking.com/hotel/it/lemon-tree-apartment-sistine-chapel.en.html?aid=2258643&no_rooms=1&group_adults=2','_blank');"
+                        class="col-xl-3 col-md-6 p-3 ">
+                        <div class="box_rome">
+                            <div class="hotel_image">
+                                <div class="sale_ad d-flex justify-content-start align-items-end">
+                                    <!-- <p class="bg-warning text-white m-0 p-2">best price</p> -->
+                                </div>
+                            </div>
+                            <div class="details border-bottom border-secondary p-2">
+                                <h4>Lemon-Tree-Apartment-Sistine-Chapel</h4>
+                                <div class="stars p-2">
+                                    <span class="text-secondary">best services</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                            <div class="price row justify-content-between p-2 align-items-center">
+                                <div class="left_side col-8">
+                                    <p class="text-secondary">Price per one person<br><span
+                                            class="d-xl-none text-dark">For customers on the
+                                            site</span></p>
+                                </div>
+                                <div class="right_side col-4 d-flex justify-content-end align-items-center"><span
+                                        class="text-warning">Starting at $389</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hotel two end -->
+
+                    <!-- hotel three start -->
+                    <article
+                        onclick="window.open('https://www.booking.com/hotel/it/nh-collection-roma-fori-imperiali.en.html?aid=2258643&no_rooms=1&group_adults=2','_blank');"
+                        class="col-xl-3 col-md-6 p-3">
+                        <div class="box_rome">
+                            <div class="hotel_image">
+                                <div class="sale_ad d-flex justify-content-start align-items-end">
+                                    <!-- <p class="bg-warning text-white m-0 p-2">best price</p> -->
+                                </div>
+                            </div>
+                            <div class="details border-bottom border-secondary p-2">
+                                <h4>Fori-Imperiali</h4>
+                                <div class="stars p-2">
+                                    <span class="text-secondary">best services</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                            <div class="price row justify-content-between p-2">
+                                <div class="left_side col-8">
+                                    <p class="text-secondary">Price per one person<br><span
+                                            class="d-xl-none text-dark">For customers on the
+                                            site</span></p>
+                                </div>
+                                <div class="right_side col-4 d-flex justify-content-end align-items-center"><span
+                                        class="text-warning">Starting at $466</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hotel three end -->
+
+                    <!-- hotel four start -->
+                    <article
+                        onclick="window.open('https://www.booking.com/hotel/it/residenza-v.en.html?aid=2258643&no_rooms=1&group_adults=2','_blank');"
+                        class="col-xl-6 col-md-6 p-3">
+                        <div class="box_rome">
+                            <div class="hotel_image">
+                                <div class="sale_ad d-flex justify-content-start align-items-end">
+                                    <p class="bg-warning text-white m-0 p-2">best price</p>
+                                </div>
+                            </div>
+                            <div class="details border-bottom border-secondary p-2">
+                                <h4>Casa V</h4>
+                                <div class="stars p-2">
+                                    <span class="text-secondary">best services</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                            <div class="price row justify-content-between p-2">
+                                <div class="left_side col-8">
+                                    <p class="text-secondary">Price per one person<br><span
+                                            class="d-xl-none text-dark">For customers on the
+                                            site</span></p>
+                                </div>
+                                <div class="right_side col-4 d-flex justify-content-end align-items-center"><span
+                                        class="text-warning">Starting at $580</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hotel four end -->
+
+                    <!-- hotel five start -->
+                    <article
+                        onclick="window.open('https://www.booking.com/hotel/it/tucked-away-and-quiet-by-piazza-navona-a-47-c-wifi-elevator.en.html?aid=2258643&no_rooms=1&group_adults=2','_blank');"
+                        class="col-xl-6 col-md-6 p-3">
+                        <div class="box_rome">
+                            <div class="hotel_image">
+                                <div class="sale_ad d-flex justify-content-start align-items-end">
+                                    <p class="bg-warning text-white m-0 p-2">best price</p>
+                                </div>
+                            </div>
+                            <div class="details border-bottom border-secondary p-2">
+                                <h4>Piazza Navona</h4>
+                                <div class="stars p-2">
+                                    <span class="text-secondary">best services</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                            <div class="price row justify-content-between p-2">
+                                <div class="left_side col-8">
+                                    <p class="text-secondary">Price per one person<br><span
+                                            class="d-xl-none text-dark">For customers on the
+                                            site</span></p>
+                                </div>
+                                <div class="right_side col-4 d-flex justify-content-end align-items-center"><span
+                                        class="text-warning">Starting at $630</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hotel five end -->
+                </div>
+            </div>
+            <div id="budapest" class="box p-4 mb-4">
+                <div class="row p-2">
+                    <h2 class="mb-3 fw-bold">budapest Hotels :</h2>
+                    <!-- hotel one start -->
+                    <article
+                        onclick="window.open('https://www.booking.com/hotel/hu/eurostars-budapest-center.en.html?aid=2258643&no_rooms=1&group_adults=2','_blank');"
+                        class="col-xl-6 col-md-12 p-3">
+                        <div class="box_budapest">
+                            <div class="hotel_image">
+                                <div class="sale_ad d-flex justify-content-start align-items-end">
+                                    <!-- <p class="bg-warning text-white m-0 p-2">best price</p> -->
+                                </div>
+                            </div>
+                            <div class="details border-bottom border-secondary p-2">
+                                <h4>Eurostars Budapest Center</h4>
+                                <div class="stars p-2">
+                                    <span class="text-secondary">best services</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                            <div class="price row justify-content-between p-2">
+                                <div class="left_side col-8">
+                                    <p class="text-secondary">Price per one person<br><span class="text-dark">For
+                                            customers on the
+                                            site</span></p>
+                                </div>
+                                <div class="right_side col-4 d-flex justify-content-end align-items-center"><span
+                                        class="text-warning">Starting at $476</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hotel one end -->
+
+                    <!-- hotel two start -->
+                    <article
+                        onclick="window.open('https://www.booking.com/hotel/hu/best-western-orion.en.html?aid=2258643&no_rooms=1&group_adults=2','_blank');"
+                        class="col-xl-3 col-md-6 p-3">
+                        <div class="box_budapest">
+                            <div class="hotel_image">
+                                <div class="sale_ad d-flex justify-content-start align-items-end">
+                                    <p class="bg-warning text-white m-0 p-2">best price</p>
+                                </div>
+                            </div>
+                            <div class="details border-bottom border-secondary p-2">
+                                <h4>Hotel Orion Várkert</h4>
+                                <div class="stars p-2">
+                                    <span class="text-secondary">best services</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                            <div class="price row justify-content-between p-2 align-items-center">
+                                <div class="left_side col-8">
+                                    <p class="text-secondary">Price per one person<br><span
+                                            class="d-xl-none text-dark">For customers on the
+                                            site</span></p>
+                                </div>
+                                <div class="right_side col-4 d-flex justify-content-end align-items-center"><span
+                                        class="text-warning">Starting at $870</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hotel two end -->
+
+                    <!-- hotel three start -->
+                    <article
+                        onclick="window.open('https://www.booking.com/hotel/hu/7seasons-apartments-budapest.en.html?aid=2258643&no_rooms=1&group_adults=2','_blank');"
+                        class="col-xl-3 col-md-6 p-3">
+                        <div class="box_budapest">
+                            <div class="hotel_image">
+                                <div class="sale_ad d-flex justify-content-start align-items-end">
+                                    <!-- <p class="bg-warning text-white m-0 p-2">best price</p> -->
+                                </div>
+                            </div>
+                            <div class="details border-bottom border-secondary p-2">
+                                <h4>7Seasons Apartments Budapest</h4>
+                                <div class="stars p-2">
+                                    <span class="text-secondary">best services</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                            <div class="price row justify-content-between p-2">
+                                <div class="left_side col-8">
+                                    <p class="text-secondary">Price per one person<br><span
+                                            class="d-xl-none text-dark">For customers on the
+                                            site</span></p>
+                                </div>
+                                <div class="right_side col-4 d-flex justify-content-end align-items-center"><span
+                                        class="text-warning">Starting at $559</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hotel three end -->
+                </div>
+            </div>
+            <div id="paris" class="box p-4 mb-4">
+                <h2 class="mb-3 fw-bold">Paris Hotels :</h2>
+                <div class="row">
+                    <!-- hotel one start -->
+                    <article
+                        onclick="window.open('https://www.booking.com/hotel/fr/saint-lazare-terrasse-4.en.html?aid=2258643&no_rooms=1&group_adults=2','_blank');"
+                        class="col-xl-6 col-md-12 p-3">
+                        <div class="box_paris">
+                            <div class="hotel_image">
+                                <div class="sale_ad d-flex justify-content-start align-items-end">
+                                    <p class="bg-warning text-white m-0 p-2">best price</p>
+                                </div>
+                            </div>
+                            <div class="details border-bottom border-secondary p-2">
+                                <h4>Apartment Opéra</h4>
+                                <div class="stars p-2">
+                                    <span class="text-secondary">best services</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                            <div class="price row justify-content-between p-2">
+                                <div class="left_side col-8">
+                                    <p class="text-secondary">Price per one person<br><span class="text-dark">For
+                                            customers on the
+                                            site</span></p>
+                                </div>
+                                <div class="right_side col-4 d-flex justify-content-end align-items-center"><span
+                                        class="text-warning">Starting at $428</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hotel one end -->
+
+                    <!-- hotel two start -->
+                    <article
+                        onclick="window.open('https://www.booking.com/hotel/fr/beautiful-cocooning-and-modern-apartment-close-to-the-latin-quarter.en.html?aid=2258643&no_rooms=1&group_adults=2','_blank');"
+                        class="col-xl-3 col-md-6 p-3">
+                        <div class="box_paris">
+                            <div class="hotel_image">
+                                <div class="sale_ad d-flex justify-content-start align-items-end">
+                                    <!-- <p class="bg-warning text-white m-0 p-2">best price</p> -->
+                                </div>
+                            </div>
+                            <div class="details border-bottom border-secondary p-2">
+                                <h4>Appartement cosy</h4>
+                                <div class="stars p-2">
+                                    <span class="text-secondary">best services</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                            <div class="price row justify-content-between p-2 align-items-center">
+                                <div class="left_side col-8">
+                                    <p class="text-secondary">Price per one person<br><span
+                                            class="d-xl-none text-dark">For customers on the
+                                            site</span></p>
+                                </div>
+                                <div class="right_side col-4 d-flex justify-content-end align-items-center"><span
+                                        class="text-warning">Starting at $578</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hotel two end -->
+
+                    <!-- hotel three start -->
+                    <article
+                        onclick="window.open('https://www.booking.com/hotel/fr/spacious-apartment-3-bedrooms-eiffel-tower.en.html?aid=2258643&no_rooms=1&group_adults=2','_blank');"
+                        class="col-xl-3 col-md-6 p-3">
+                        <div class="box_paris">
+                            <div class="hotel_image">
+                                <div class="sale_ad d-flex justify-content-start align-items-end">
+                                    <!-- <p class="bg-warning text-white m-0 p-2">best price</p> -->
+                                </div>
+                            </div>
+                            <div class="details border-bottom border-secondary p-2">
+                                <h4>Spacious apartment</h4>
+                                <div class="stars p-2">
+                                    <span class="text-secondary">best services</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                            <div class="price row justify-content-between p-2">
+                                <div class="left_side col-8">
+                                    <p class="text-secondary">Price per one person<br><span
+                                            class="d-xl-none text-dark">For customers on the
+                                            site</span></p>
+                                </div>
+                                <div class="right_side col-4 d-flex justify-content-end align-items-center"><span
+                                        class="text-warning">Starting at $642</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hotel three end -->
+                </div>
+            </div>
+            <div id="amsterdam" class="box p-4 mb-4">
+                <h2 class="mb-3 fw-bold">amsterdam Hotels :</h2>
+                <div class="row">
+                    <!-- hotel one start -->
+                    <article
+                        onclick="window.open('https://www.booking.com/hotel/nl/captain-pippi-amsterdam-39-s-finest-houseboat.en.html?aid=2258643&no_rooms=1&group_adults=2','_blank');"
+                        class="col-xl-6 col-md-12 p-3">
+                        <div class="box_amsterdam">
+                            <div class="hotel_image">
+                                <div class="sale_ad d-flex justify-content-start align-items-end">
+                                    <p class="bg-warning text-white m-0 p-2">best price</p>
+                                </div>
+                            </div>
+                            <div class="details border-bottom border-secondary p-2">
+                                <h4>Amsterdam's finest Houseboat</h4>
+                                <div class="stars p-2">
+                                    <span class="text-secondary">best services</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                            <div class="price row justify-content-between p-2">
+                                <div class="left_side col-8">
+                                    <p class="text-secondary">Price per one person<br><span class="text-dark">For
+                                            customers on the
+                                            site</span></p>
+                                </div>
+                                <div class="right_side col-4 d-flex justify-content-end align-items-center"><span
+                                        class="text-warning">Starting at $635</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hotel one end -->
+
+                    <!-- hotel two start -->
+                    <article
+                        onclick="window.open('https://www.booking.com/hotel/nl/b-amp-b-odam.en.html?aid=2258643&no_rooms=1&group_adults=2','_blank');"
+                        class="col-xl-3 col-md-6 p-3">
+                        <div class="box_amsterdam">
+                            <div class="hotel_image">
+                                <div class="sale_ad d-flex justify-content-start align-items-end">
+                                    <!-- <p class="bg-warning text-white m-0 p-2">best price</p> -->
+                                </div>
+                            </div>
+                            <div class="details border-bottom border-secondary p-2">
+                                <h4>B&B Mondriaan</h4>
+                                <div class="stars p-2">
+                                    <span class="text-secondary">best services</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                            <div class="price row justify-content-between p-2 align-items-center">
+                                <div class="left_side col-8">
+                                    <p class="text-secondary">Price per one person<br><span
+                                            class="d-xl-none text-dark">For customers on the
+                                            site</span></p>
+                                </div>
+                                <div class="right_side col-4 d-flex justify-content-end align-items-center"><span
+                                        class="text-warning">Starting at $278</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hotel two end -->
+
+                    <!-- hotel three start -->
+                    <article
+                        onclick="window.open('https://www.booking.com/hotel/nl/studio-amsterdam-diemen.en.html?aid=2258643&no_rooms=1&group_adults=2','_blank');"
+                        class="col-xl-3 col-md-6 p-3">
+                        <div class="box_amsterdam">
+                            <div class="hotel_image">
+                                <div class="sale_ad d-flex justify-content-start align-items-end">
+                                    <p class="bg-warning text-white m-0 p-2">best price</p>
+                                </div>
+                            </div>
+                            <div class="details border-bottom border-secondary p-2">
+                                <h4>Bed & Bike Studio Amsterdam</h4>
+                                <div class="stars p-2">
+                                    <span class="text-secondary">best services</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                            <div class="price row justify-content-between p-2">
+                                <div class="left_side col-8">
+                                    <p class="text-secondary">Price per one person<br><span
+                                            class="d-xl-none text-dark">For customers on the
+                                            site</span></p>
+                                </div>
+                                <div class="right_side col-4 d-flex justify-content-end align-items-center"><span
+                                        class="text-warning">Starting at $519</span></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hotel three end -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- hotels contry end-->
+
+    <div class="p-3">
+        <details class="container center mb-3 py-3 px-2">
+            <summary class="fs-6s">Click here to watch video</summary>
+            <div class="mt-5">
+                <iframe muted width="560" height="315"
+                    src="https://www.youtube.com/embed/xfvQN-T2OiY?controls=0&amp;start=439&mute=1&autoplay=1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+        </details>
+    </div>
+    <!-- footer start -->
+    <footer class="container-fluid">
+        <div class="container p-3">
+            <div class="row align-items-center">
+                <div>
+                    <div class="platforms_box text-center">
+                        <nav>
+                            <a target="_blank" href="https://www.instagram.com/shay_bushary/">
+                                <span class="instagram">
+                                    <span class="fa fa-instagram"></span>
+                                </span>
+                            </a>
+                            <a target="_blank" href="https://www.linkedin.com/in/shaybushary/">
+                                <span class="fa fa-linkedin-square" aria-hidden="true"></span>
+                            </a>
+                            <a target="_blank" href="https://www.facebook.com/shay.bushary">
+                                <span class="fa fa-facebook-square" aria-hidden="true"></span>
+                            </a>
+                            <a target="_blank" href="https://github.com/Shaybush">
+                                <span class="fa fa-github-square" aria-hidden="true"></span>
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="aboutMe_box text-center">
+                        <span>Fullstack Web Developer © 2022</span>
+                        <p>Shay Bushary</p>
+                        <!-- <nav>
+                            <a class="border-end border-1 border-dark" href="index.html">home</a>
+                            <a href="pages/gallery.html">gallery</a>
+                        </nav> -->
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- my script -->
+    <script src="../script/filter_script.js"></script>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

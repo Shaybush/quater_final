@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+:root {
+    /* colors */
+    --primary-50: #e0fcff;
+    --primary-100: #bef8fd;
+    --primary-200: #87eaf2;
+    --primary-300: #54d1db;
+    --primary-400: #38bec9;
+    --primary-500: #2cb1bc;
+    --primary-600: #14919b;
+    --primary-700: #0e7c86;
+    --primary-800: #0a6c74;
+    --primary-900: #044e54;
+    --primary-1000: #023a3f;
+    /* grey */
+    --grey-50: #f0f4f8;
+    --grey-100: #d9e2ec;
+    --grey-200: #bcccdc;
+    --grey-300: #9fb3c8;
+    --grey-400: #829ab1;
+    --grey-500: #627d98;
+    --grey-600: #486581;
+    --grey-700: #334e68;
+    --grey-800: #243b53;
+    --grey-900: #102a43;
+    /* rest of the colors */
+    --black: #333;
+    --black9: rgba(51, 51, 51, 0.903);
+    --black8: rgba(51, 51, 51, 0.803);
+    --black7: rgba(51, 51, 51, 0.703);
+    --black6: rgba(51, 51, 51, 0.603);
+    --black5: rgba(51, 51, 51, 0.503);
+    --black4: rgba(51, 51, 51, 0.403);
+    --black3: rgba(51, 51, 51, 0.303);
+    --white: #fff;
+    --white-9: rgba(255, 255, 255, 0.9);
+    --white-8: rgba(255, 255, 255, 0.802);
+    --white-7: rgba(255, 255, 255, 0.708);
+    --white-6: rgba(255, 255, 255, 0.606);
+    --white-5: rgba(255, 255, 255, 0.503);
+    --white-4: rgba(255, 255, 255, 0.395);
+    --white-3: rgba(255, 255, 255, 0.301);
+    --red-light: #f8d7da;
+    --red-dark: #842029;
+    --green-light: #d1e7dd;
+    --green-dark: #0f5132;
+}
+main{
+    .contact_image{
+        p{
+            font-family: 'Lobster', cursive;
+            font-size: 2em;
+            display: inline;
+            span{
+                color: var(--primary-400);
+                font-family: 'Dancing Script', cursive;
+            }
+        }
+    }
+    form{
+        background: var(--grey-200);
+        border-radius: 8px;
+        p{
+            font-size: 0.8em;
+        }
+    }
+    form:hover{
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    }
+}

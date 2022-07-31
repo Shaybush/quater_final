@@ -1,0 +1,25 @@
+body {
+    background: url('https://i.ibb.co/c1CXXRh/background-trivia.jpg');
+    background-position: center;
+    background-size: cover;
+    header{
+        height: 10vh;
+        background: rgba(255, 255, 255, 0.733);
+    }
+    main {
+        background: rgba(255, 255, 255, 0.733);
+        height: 90vh;
+    .btn{
+        background: rgba(51, 51, 51, 0.970);
+        color: #fff;
+        // transition: 800ms;
+    }
+    .btn:hover,
+    .btn::after{
+        background: #333;
+        color: #fff;
+        // border: none;
+        // transform: scale(1.05);
+    }
+    }
+}

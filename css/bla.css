@@ -1,0 +1,70 @@
+section .container .row article {
+  cursor: pointer;
+}
+section .container .row article .checked {
+  color: orange;
+}
+section .container .row article .description_box p {
+  font-size: 1em;
+}
+section .container .row article .description_box a {
+  text-decoration: none;
+  padding: 0 8px;
+}
+section .container .row article .img_box {
+  height: 400px;
+}
+section .container .row article .img_box img {
+  height: 100%;
+  width: 100%;
+}
+section .container .row article .about_hotel {
+  height: 75%;
+}
+section .container .row article .rating_hotel {
+  height: 25%;
+}
+section .container .row article .rating_hotel .userImg img {
+  border: 1px solid var(--black);
+  height: 60%;
+  width: 50%;
+}
+section .container .row article:hover {
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 992px) {
+  section .container .row article {
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  }
+  section .container .row article .description_box p {
+    font-size: 7.5px;
+  }
+  section .container .row article .description_box h6 {
+    font-size: 0.8em;
+  }
+  section .container .row article .description_box nav {
+    margin: 0;
+    padding: 0;
+  }
+  section .container .row article .description_box nav a {
+    display: block;
+    padding: 0 8px;
+    font-size: 0.5em;
+  }
+  section .container .row article .img_box {
+    height: 250px;
+  }
+  section .container .row article .rating_hotel .userImg img {
+    height: 50%;
+  }
+  section .container .row article .rating_hotel .fa-star {
+    font-size: 0.5em;
+  }
+  section .container .row article .rating_hotel .fa-star-half-o {
+    font-size: 0.5em;
+  }
+  section .container .row article .rating_hotel span {
+    font-size: 0.5em;
+  }
+}/*# sourceMappingURL=bla.css.map */

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/logo1.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI HotelMe-by-ShayBushary</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- light box -->
+    <link rel="stylesheet" href="css/light_box.css">
+    <link rel="stylesheet" href="css/general.css">
+    <!-- page main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- header start -->
+    <header class="container-fluid">
+        <div class="container">
+            <div class="row align-items-center py-1 justify-content-between">
+                <div class="logo col-auto">
+                    <a href="index.html" class="d-flex align-items-center">
+                        <h1>Hotel<span>Me</span></h1>
+                        <img src="images/logo2.ico" alt="" width="25">
+                    </a>
+                </div>
+                <nav id="navbar" class="col-md d-md-flex align-items-center">
+                    <ul class="nav col  justify-content-end">
+                        <!-- <li class=" col-12 col-md-auto d-flex d-md-none justify-content-start mt-4 mb-5 text-danger"><i
+                                id="close" class="fa fa-times" aria-hidden="true"></i></li> -->
+                        <li
+                            class="mt-5 mt-md-0 col-12 col-md-auto d-flex col col-md-auto justify-content-between align-items-center">
+                            <i class="fa fa-arrow-left d-md-none" aria-hidden="true"></i><a href="index.html"><i
+                                    class="fa fa-home" aria-hidden="true"></i>Home</a>
+                        </li>
+                        <li
+                            class=" col-12 col-md-auto d-flex col col-md-auto justify-content-between align-items-center">
+                            <i class="fa fa-arrow-left d-md-none" aria-hidden="true"></i><a href="pages/about.html"><i
+                                    class="fa fa-university" aria-hidden="true"></i>About</a>
+                        </li>
+                        <li
+                            class=" col-12 col-md-auto d-flex col col-md-auto justify-content-between align-items-center">
+                            <i class="fa fa-arrow-left d-md-none" aria-hidden="true"></i><a
+                                href="pages/gallery.html">Hotels</a>
+                        </li>
+                        <li
+                            class=" col-12 col-md-auto d-flex col col-md-auto justify-content-between align-items-center">
+                            <i class="fa fa-arrow-left d-md-none" aria-hidden="true"></i><a href="pages/trivia.html"><i
+                                    class="fa fa-question-circle" aria-hidden="true"></i>Trivia </a>
+                        </li>
+                        <li class=" col-12 col-md-auto d-flex col col-md-auto justify-content-end align-items-center"><a
+                                href="pages/contact.html">Contact</a></li>
+                        <li class=" col-12 col-md-auto d-flex col col-md-auto justify-content-end align-items-center"><a
+                                href="pages/faq.html">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="burger d-flex justify-content-end col d-md-none text-end">
+                    <!-- כדי שהסקריפט יעבוד צריך להוסיף איי די לבורגר -->
+                    <i id="burger" class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- api booking start -->
+    <div class="container text-center">
+        <h2>Didn't find your hotel yet?</h2>
+        <h4>Search here in Booking</h4>
+        <ins class="bookingaff bg-white" data-aid="2262533" data-target_aid="2262533" data-prod="nsb" data-width="100%" data-height="auto" data-lang="en" data-df_num_properties="3">
+            <!-- Anything inside will go away once widget is loaded. -->
+                <a href="//www.booking.com?aid=2262533">Booking.com</a>
+        </ins>
+    </div>
+    <!-- api booking end -->
+
+    <!-- replace carousel start -->
+    <div class="strip container-fluid center d-md-none">
+        <div class="container">
+            <h2>our hotels offer the best service!</h2>
+            <p>You can choose your hotel and we will <br> <span class="p-1"> <strong> link
+                        you to the site</strong></span></p>
+            <a href="pages/gallery.html" class="hbtn hb-fill-top" data-aos="fade-up">Top Hotels List</a>
+        </div>
+    </div>
+    <!-- replace carousel end -->
+
+    <!-- carousel start -->
+    <div id="part1" class="strip_carousel container-fluid bg-dark p-0 d-md-block d-none m-0">
+        <div id="carouselExampleCaptions" class="carousel" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- rome -->
+                <div class="carousel-item active">
+                    <!-- <img src="images/cover2.jpg" class="d-block w-100" alt="..."> -->
+                    <div class="bg_pic" style="background-image: url('https://i.ibb.co/9vP2WGh/rome.jpg');"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>rome italy</h5>
+                        <p>aerial photo of the city of rome</p>
+                    </div>
+                </div>
+                <!-- rhodes -->
+                <div class="carousel-item">
+                    <!-- <img src="images/cover2.jpg" class="d-block w-100" alt="..."> -->
+                    <div class="bg_pic" style="background-image: url(https://i.ibb.co/SPxN7c3/rhodes.jpg);"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Rhodes Greece</h5>
+                        <p>the mountains of the island of rhodes in greece</p>
+                    </div>
+                </div>
+                <!-- budapest hungary -->
+                <div class="carousel-item">
+                    <!-- <img src="f35_images/strip.png" class="d-block w-100" alt="..."> -->
+                    <div class="bg_pic" style="background-image: url(https://i.ibb.co/nj6tS92/budapest.jpg);">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Budapest Hungary</h5>
+                        <p>Spectacular photo of the city of budapest</p>
+                    </div>
+                </div>
+                <!-- paris -->
+                <div class="carousel-item">
+                    <!-- <img src="f35_images/strip.png" class="d-block w-100" alt="..."> -->
+                    <div class="bg_pic" style="background-image: url(https://i.ibb.co/YySbJ0N/paris.jpg);"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Paris France</h5>
+                        <p>"Best Food Ever! Just Look At The View"</p>
+                    </div>
+                </div>
+                <!-- amsterdam -->
+                <div class="carousel-item">
+                    <!-- <img src="f35_images/strip.png" class="d-block w-100" alt="..."> -->
+                    <div class="bg_pic_amsterdam" style="background-image: url(https://i.ibb.co/bsRCqMY/amsterdam.jpg);"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Amsterdam Holland</h5>
+                        <p>"Spectacular views and a crazy experience"</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- carousel end -->
+
+    <!-- ad wesites start -->
+    <aside>
+            
+        <h6>On these sites you will find all the information:</h6>
+        <nav>
+            <a class="booking_a col-3" target="_blank" href="https://www.booking.com/index.he.html"><img title="booking"
+                    src="https://i.ibb.co/rZRkT3v/logo-booking.png" alt="logo-booking" border="0"></a>
+            <a class="daka90_a col-3" target="_blank" href="https://www.daka90.co.il/"><img title="daka90"
+                    src="https://i.ibb.co/648JrY4/logo-daka90.png" alt="logo-daka90" border="0"></a>
+            <a class="tripadvisor_a col-3" target="_blank" href="https://www.tripadvisor.co.il/"><img
+                    src="https://i.ibb.co/P1hLVDv/Trip-Advisor-Logo.png" title="trip-advisor" alt="Trip-Advisor-Logo"
+                    border="0"></a>
+        </nav>
+        <button id="close_btn" class="btn btn-secondary btn-sm mt-4">Not intersted</button>
+    </aside>
+    <!-- ad websites end -->
+
+    <!-- about our website start with read more-->
+
+    <!-- about our website end -->
+
+    <!-- cities start -->
+    <section class="container-fluid p-5">
+        <div class="container">
+            <div class="hotels_view">
+                <div class="row p-0 justify-content-evenly">
+                    <!-- Rhodes start -->
+                    <article class="col-xl-4 col-sm-6 p-3">
+                        <!-- h-100 for giving the same height as height 100% -->
+                        <div class="box box_rhodes border h-100">
+                            <div class="hotel_image">
+                                <img data-img src="https://i.ibb.co/TPdBjyS/rhodos-show.jpg" alt="Rhodos" border="0"
+                                    width="100%">
+                            </div>
+                            <div onclick="window.open('pages/gallery.html#rhodes','mywindow');"
+                                class="border-bottom border-secondary text-primary p-2 mb-2 mx-5 d-flex align-items-center justify-content-center">
+                                <h4 class="me-2">Rhodes</h4>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div onclick="window.open('pages/gallery.html#rhodes','mywindow');"
+                                class="details_box px-4 py-1">
+                                <p class="m-0">Rhodes is the largest of the Dodecanese islands of Greece and is also
+                                    the island group's
+                                    historical capital. Administratively the island forms a separate municipality. </p>
+                                <h6 class="text-secondary py-3">Top places:</h6>
+                                <nav>
+                                    <a target="_blank" href="https://whc.unesco.org/en/list/493/"><i
+                                            class="fa fa-map-marker" aria-hidden="true"></i>The Medieval City of
+                                        Rhodes</a>
+                                    <a target="_blank"
+                                        href="https://www.tripadvisor.com/Attraction_Review-g635613-d8099471-Reviews-Mandraki_Harbour-Rhodes_Town_Rhodes_Dodecanese_South_Aegean.html"><i
+                                            class="fa fa-map-marker" aria-hidden="true"></i>Mandraki</a>
+                                    <a target="_blank"
+                                        href="https://www.rhodesguide.com/travelguide/rhodes_villages.php?ssp=7"><i
+                                            class="fa fa-map-marker" aria-hidden="true"></i>Lindos</a>
+                                </nav>
+                                <button class="btn btn-primary mt-3 mb-2 d-flex mx-auto">See Hotels</button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Rhodes end -->
+
+                    <!-- Rome start -->
+                    <article class="col-xl-4 col-sm-6 p-3 ">
+                        <div class="box box_rome border h-100">
+                            <div class="hotel_image">
+                                <img data-img src="https://i.ibb.co/xLHv0ZV/rome-show.jpg" alt="Rhodos" border="0"
+                                    width="100%">
+                            </div>
+                            <div onclick="window.open('pages/gallery.html#rome','mywindow');"
+                                class="border-bottom border-secondary text-primary p-2 mb-2 mx-5 d-flex align-items-center justify-content-center">
+                                <h4 class="me-2">Rome</h4>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div onclick="window.open('pages/gallery.html#rome','mywindow');"
+                                class="details_box px-4 py-1">
+                                <p class="m-0">Rome is the capital city of Italy. It is also the capital of the Lazio
+                                    region, the centre of the Metropolitan City of Rome, and a special comune named
+                                    Comune
+                                    di Roma Capitale </p>
+                                <h6 class="text-secondary py-3">Top places:</h6>
+                                <nav>
+                                    <a target="_blank"
+                                        href="https://www.voyagetips.com/en/things-to-do-in-rome/#2_The_Roman_Forum"><i
+                                            class="fa fa-map-marker" aria-hidden="true"></i>The Roman Forum</a>
+                                    <a target="_blank"
+                                        href="https://www.voyagetips.com/en/things-to-do-in-rome/#4_Piazza_Venezia"><i
+                                            class="fa fa-map-marker" aria-hidden="true"></i>Piazza Venezia</a>
+                                    <a target="_blank"
+                                        href="https://www.voyagetips.com/en/things-to-do-in-rome/#6_The_Pantheon"><i
+                                            class="fa fa-map-marker" aria-hidden="true"></i>The Pantheon</a>
+                                </nav>
+                                <button class="btn btn-primary mt-3 mb-2 d-flex mx-auto">See Hotels</button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Rome end -->
+
+                    <!-- Budapest start -->
+                    <article class="col-xl-4 col-sm-6 p-3 ">
+                        <div class="box box_rome border">
+                            <div class="hotel_image">
+                                <img data-img src="https://i.ibb.co/d4XkfVG/budapest-show.jpg" alt="Rhodos" border="0"
+                                    width="100%">
+                            </div>
+                            <div onclick="window.open('pages/gallery.html#budapest','mywindow');"
+                                class="border-bottom border-secondary text-primary p-2 mb-2 mx-5 d-flex align-items-center justify-content-center">
+                                <h4 class="me-2">Budapest</h4>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div onclick="window.open('pages/gallery.html#budapest','mywindow');"
+                                class="details_box px-4 py-1">
+                                <p class="m-0">Budapest is the capital and most populous city of Hungary. It is the
+                                    ninth-largest
+                                    city in the European Union by population within city limits and the second-largest
+                                    city
+                                    on Danube river. </p>
+                                <h6 class="text-secondary py-3">Top places:</h6>
+                                <nav>
+                                    <a target="_blank"
+                                        href="https://www.getyourguide.com/szechenyi-thermal-bath-l3695/?partner_id=M7Z0W0W&utm_medium=online_publisher&utm_source=timeout&placement=content-middle&deeplink_id=a03fc284-bc0a-5aee-b839-caeee037a9c6"><i
+                                            class="fa fa-map-marker" aria-hidden="true"></i>Szechenyi Baths</a>
+                                    <a target="_blank"
+                                        href="https://www.getyourguide.com/fisherman-s-bastion-l3694/?partner_id=M7Z0W0W&utm_medium=online_publisher&utm_source=timeout&placement=content-middle&deeplink_id=59e7e5be-f39b-5d06-914f-4da632165b80"><i
+                                            class="fa fa-map-marker" aria-hidden="true"></i>Fisherman’s Bastion</a>
+                                    <a target="_blank"
+                                        href="https://www.getyourguide.com/buda-castle-l3691/?partner_id=M7Z0W0W&utm_medium=online_publisher&utm_source=timeout&placement=content-middle&utm_force=0&deeplink_id=030211b6-fc25-517d-bcd3-359680df86c3&visitor-id=20QJGQOENSZMGDJ5Z6JYPSKLBJWZ7M5V&locale_autoredirect_optout=true"><i
+                                            class="fa fa-map-marker" aria-hidden="true"></i>Buda Castle</a>
+                                </nav>
+                                <button class="btn btn-primary mt-3 mb-2 d-flex mx-auto">See Hotels</button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Budapest end -->
+
+                    <!-- Paris start -->
+                    <article class="col-xl-4 col-sm-6 p-3">
+                        <div class="box box_rome border h-100">
+                            <div class="hotel_image">
+                                <img data-img src="https://i.ibb.co/tDbxRZH/paris-show.jpg" alt="Rhodos" border="0"
+                                    width="100%">
+                            </div>
+                            <div onclick="window.open('pages/gallery.html#paris','mywindow');"
+                                class="border-bottom border-secondary text-primary p-2 mb-2 mx-5 d-flex align-items-center justify-content-center">
+                                <h4 class="me-2">Paris</h4>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div onclick="window.open('pages/gallery.html#paris','mywindow');"
+                                class="details_box px-4 py-1">
+                                <p class="m-0">Paris is located in the north-central part of France along the Seine River.
+                                    It is at the
+                                    center of the Île-de-France region. </p>
+                                <h6 class="text-secondary py-3">Top places:</h6>
+                                <nav>
+                                    <a target="_blank"
+                                        href="https://www.cometoparis.com/catalog/eiffel-tower-skip-the-line-tickets-9000500"><i
+                                            class="fa fa-map-marker" aria-hidden="true"></i>Eiffel Tower</a>
+                                    <a target="_blank"
+                                        href="https://www.cometoparis.com/museums-and-monuments/louvre-museum-m9000673"><i
+                                            class="fa fa-map-marker" aria-hidden="true"></i>Louvre Museum</a>
+                                    <a target="_blank" href="https://www.cometoparis.com/catalog/dinner-cruise-paris-202"><i
+                                            class="fa fa-map-marker" aria-hidden="true"></i>Cruise on the Seine</a>
+                                </nav>
+                                <button class="btn btn-primary mt-3 mb-2 d-flex mx-auto">See Hotels</button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Paris end -->
+
+                    <!-- Amsterdam start -->
+                    <article class="col-xl-4 col-sm-6 p-3">
+                        <div class="box box_rome border">
+                            <div class="hotel_image">
+                                <img data-img src="https://i.ibb.co/YXCWgGd/amsterdam-show.jpg" alt="Rhodos" border="0"
+                                    width="100%">
+                            </div>
+                            <div onclick="window.open('pages/gallery.html#amsterdam','mywindow');"
+                                class="border-bottom border-secondary text-primary p-2 mb-2 mx-5 d-flex align-items-center justify-content-center">
+                                <h4 class="me-2">Amsterdam</h4>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div onclick="window.open('pages/gallery.html#amsterdam','mywindow');"
+                                class="details_box px-4 py-1">
+                                <p class="m-0">Amsterdam is a city and port in the Netherlands. It is the country’s capital
+                                    and its
+                                    principal commercial and financial centre. </p>
+                                <h6 class="text-secondary py-3">Top places:</h6>
+                                <nav>
+                                    <a target="_blank"
+                                        href="https://www.rhodesguide.com/travelguide/rhodes_villages.php?ssp=7"><i
+                                            class="fa fa-map-marker" aria-hidden="true"></i>Rijksmuseum</a>
+                                    <a target="_blank"
+                                        href="https://www.tripadvisor.com/Attraction_Review-g635613-d8099471-Reviews-Mandraki_Harbour-Rhodes_Town_Rhodes_Dodecanese_South_Aegean.html"><i
+                                            class="fa fa-map-marker" aria-hidden="true"></i>Anne Frank House</a>
+                                    <a target="_blank" href="https://whc.unesco.org/en/list/493/"><i
+                                            class="fa fa-map-marker" aria-hidden="true"></i>Van Gogh Museum</a>
+                                </nav>
+                                <button class="btn btn-primary mt-3 mb-2 d-flex mx-auto">See Hotels</button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Amsterdam end -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cities end -->
+
+    <!-- footer start -->
+    <footer class="container-fluid">
+        <div class="container p-3">
+            <div class="row align-items-center">
+                <div>
+                    <div class="platforms_box text-center">
+                        <nav>
+                            <a target="_blank" href="https://www.instagram.com/shay_bushary/">
+                                <span class="instagram">
+                                    <span class="fa fa-instagram"></span>
+                                </span>
+                            </a>
+                            <a target="_blank" href="https://www.linkedin.com/in/shaybushary/">
+                                <span class="fa fa-linkedin-square" aria-hidden="true"></span>
+                            </a>
+                            <a target="_blank" href="https://www.facebook.com/shay.bushary">
+                                <span class="fa fa-facebook-square" aria-hidden="true"></span>
+                            </a>
+                            <a target="_blank" href="https://github.com/Shaybush">
+                                <span class="fa fa-github-square" aria-hidden="true"></span>
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="aboutMe_box text-center">
+                        <span>Fullstack Web Developer © 2022</span>
+                        <p>Shay Bushary</p>
+                        <!-- <nav>
+                            <a class="border-end border-1 border-dark" href="index.html">home</a>
+                            <a href="pages/gallery.html">gallery</a>
+                        </nav> -->
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+    <!-- light box -->
+    <script src="script/lightbox_pro.js"></script>
+    <!-- my script -->
+    <script src="script/script.js"></script>
+    <!-- <img src="https://i.ibb.co/bv0XSfN/iphone12-pro-blue.png" alt="iphone12-pro-blue" border="0">    <script src="script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- booking -->
+    <script type="text/javascript">
+        (function(d, sc, u) {
+          var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = u + '?v=' + (+new Date());
+          p.parentNode.insertBefore(s,p);
+          })(document, 'script', '//cf.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+    </script>
+    <!-- aos animate setup -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

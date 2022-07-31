@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../../images/logo2.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/trivia.css">
+    <link rel="stylesheet" href="../../css/general.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <!-- <script src="../../script/trivia/triviaApp.js"></script> -->
+    <script defer src="../../script/trivia/AfterGame.js"></script>
+    <title>Form Trivia Game</title>
+</head>
+
+<body>
+    <main class="fireworks-example">
+        <form id="id_form" class="p-5 bg bg-white shadow rounded">
+            <h2 class="mb-3">Register Form <img src="../../images/logo1.png" alt="logo"></h2>
+            <label class="form-label d-flex align-items-center">Your Name : </label>
+            <input id="id_name" class="form-control form-control-lg mb-3" type="text">
+            <p id="name_err" class="text-danger"></p>
+            <label class="form-label d-flex align-items-center">Last Name : </label>
+            <input id="id_Lname" class="form-control form-control-lg" type="text">
+            <p id="lname_err" class="text-danger"></p>
+            <div class="controls mt-3 d-flex">
+                <button class="btn btn-dark btn-lg d-flex me-3">Save</button>
+                <a class="btn btn-secondary btn-lg" href="trivia.html" type="button">Home</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
