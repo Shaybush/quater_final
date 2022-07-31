@@ -8,7 +8,7 @@ class TriviaClass {
     }
     render() {
         document.querySelector("#id_counterQ").innerHTML = `
-        <h2>question :  ${counter+1}/${trivia_list.length}</h2> 
+        <h2>Question :  ${counter+1}/${trivia_list.length}</h2> 
         `
         document.querySelector("#id_question").innerHTML = `
         <h2 class="display-4">${this.question}</h2>

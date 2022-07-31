@@ -28,7 +28,7 @@ const declareEvents = () => {
                 "score": current_score
             }
             // why cannot push here ask Yarin
-            highScores.push(obj);
+            highScores.unshift(obj);
             localStorage.setItem("scoreList", JSON.stringify(highScores));
             window.open('trivia.html')
         })
