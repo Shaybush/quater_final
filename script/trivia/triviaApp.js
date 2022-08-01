@@ -15,9 +15,9 @@ const getApiRequest = () => {
             "X-Master-Key": "$2b$10$qX5KcsGIkrTwK8ydTZQsp.GbFVAdhGMJgBRDjR7IBw6TCWSZbWI12",
         }
     })
-        //   resp have whole api request we needed just the data 
+        //resp have whole api request we needed just the data 
         .then(function (resp) {
-            // console.log(resp);
+            // record holding our data the *global* variable trivia list - holding our data
             trivia_list = resp.data.record;
             build_trivia();
         })
@@ -29,17 +29,20 @@ const build_trivia = () => {
         // Reset all variables
         document.querySelector("#id_question").innerHTML = "";
         document.querySelector("#id_answers").innerHTML = "";
-        // for getting the next 
+        // for getting the next place
         counter++;
         if (counter < trivia_list.length) {
+            // sheffle the answers
             shuffle(trivia_list[counter].answers)
             let box_trivia = new TriviaClass("#id_answers", trivia_list[counter]);
-            box_trivia.render();
+            // render it direcly in the class
         }
         else {
-            // alert(`your points ${points} from ${trivia_list.length}`);
+            // update the local storage with the current points
             localStorage.setItem("points",`${points} of ${trivia_list.length}`)
-            window.open('afterGame.html');
+            // not working with iphone
+            // window.open('afterGame.html');
+            window.location.assign('afterGame.html')
         }
     }
 }
