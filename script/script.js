@@ -19,7 +19,7 @@ if (bar != null) {
       nav.classList.remove("active");
       setTimeout(() => {
         bar.className = "fa fa-bars";
-      }, 100)
+      }, 250)
       bar.style.color = "black"
       bar.className = "fa fa-minus";
       return;
@@ -28,7 +28,7 @@ if (bar != null) {
       setTimeout(() => {
         bar.className = "fa fa-times";
         bar.style.color = "red"
-      }, 100)
+      }, 250)
       bar.className = "fa fa-minus";
   });
 }
