@@ -14,13 +14,22 @@ if (bar != null) {
   bar.addEventListener("click", () => {
     console.log("click");
     // אחרי שלחצת עליו תוסיף לנאב בר אקטיב
+    // יופיע באנימציה מאיקס לברס
     if (nav.classList.contains("active")) {
       nav.classList.remove("active");
+      setTimeout(() => {
+        bar.className = "fa fa-bars";
+      }, 100)
+      bar.style.color = "black"
+      bar.className = "fa fa-minus";
+      return;
     }
-    else {
       nav.classList.add("active");
-    }
-
+      setTimeout(() => {
+        bar.className = "fa fa-times";
+        bar.style.color = "red"
+      }, 100)
+      bar.className = "fa fa-minus";
   });
 }
 if (close_btn != null) {
@@ -32,12 +41,12 @@ if (close_btn != null) {
 if (more_Information != null) {
   more_Information.addEventListener("click", () => {
     let details = document.querySelector("#id_more");
-    if(details.classList.contains("d-none")){
+    if (details.classList.contains("d-none")) {
       details.classList.remove("d-none");
       more_Information.innerHTML = "show less"
       more_Information.style.color = "red"
     }
-    else{
+    else {
       details.classList.add("d-none");
       more_Information.innerHTML = "...see more"
       more_Information.style.color = "black"

@@ -363,10 +363,12 @@ footer {
                 }
             }
         }
-        .fa.fa-bars {
-            font-size: 2em;
-            cursor: pointer;
-            color: var(--black);
+        .burger{
+            .fa{
+                font-size: 2em;
+                cursor: pointer;
+                color: var(--black);
+            }
         }
         nav.active {
             right: 0;

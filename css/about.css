@@ -283,7 +283,7 @@ footer .platforms_box nav a .fa-instagram:hover {
 header nav ul div h3::after {
     background: var(--grey-300);
   }
-  header .fa.fa-bars {
+  header .fa {
     font-size: 2em;
     cursor: pointer;
     color: var(--black);
