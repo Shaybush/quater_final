@@ -61,6 +61,9 @@ const shuffle = (array) => {
         // And swap it with the current element.
         [array[currentIndex], array[randomIndex]] = [
             array[randomIndex], array[currentIndex]];
+            // let temp = array[currentIndex];
+            // array[currentIndex] = array[randomIndex];
+            // array[randomIndex] = temp;
     }
     return array;
 }

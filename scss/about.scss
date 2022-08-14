@@ -81,35 +81,39 @@ section {
   .about_me {
     .card {
       box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-      a{
+
+      a {
         cursor: pointer;
       }
     }
   }
-  .our_servise{
-    h2{
+
+  .our_servise {
+    h2 {
       text-align: center;
       margin-top: 48px;
     }
-    h2::after{
+
+    h2::after {
       content: '';
       display: block;
       background: var(--primary-900);
       height: 2px;
       width: 50%;
       margin: 12px auto;
-      
+
     }
-    .row{
+
+    .row {
       background: var(--white);
       padding: 24px;
       border-radius: 12px;
       margin-top: 48px;
-      .img_div{
 
-      }
-      .description_div{
-        p{
+      .img_div {}
+
+      .description_div {
+        p {
           font-size: 1.2em;
           font-family: sans-serif;
         }
@@ -118,18 +122,21 @@ section {
     }
   }
 }
-@media(max-width:768px){
-  p{
+
+@media(max-width:768px) {
+  p {
     font-size: 0.8em;
   }
-  section{
-    .our_servise{
-      h2{
+
+  section {
+    .our_servise {
+      h2 {
         font-size: 1em;
       }
-      .row{
-        .description_div{
-          p{
+
+      .row {
+        .description_div {
+          p {
             font-size: 0.8em;
           }
         }
@@ -137,12 +144,9 @@ section {
     }
   }
 }
+
 //section end
 
-// ad start
-.ad{
-}
-// ad end
 
 
 
