@@ -1,0 +1,23 @@
+[
+    {
+        "image" : "https://i.ibb.co/XWDL7Jm/Rhodes-Central-Suite.jpg",
+        "title":"rhodes central suite",
+        "service":"best services",
+        "rank" : 4.4,
+        "price":400
+    },
+    {
+        "image" : "https://www.booking.com/hotel/gr/mefomi-villa.en.html?aid=2258643&no_rooms=1&group_adults=2",
+        "title":"MeFoMi Villa",
+        "service":"best services",
+        "rank" : 4.5,
+        "price":539
+    },
+    {
+        "image" : "https://www.booking.com/hotel/gr/secret-garden-old-town-rodos-pole.en.html?aid=2258643&no_rooms=1&group_adults=2",
+        "title":"Secret Garden - Old Town",
+        "service":"best services",
+        "rank" : 4.6,
+        "price":358
+    }
+]
