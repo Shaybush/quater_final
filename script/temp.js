@@ -7,4 +7,3 @@ const myQuestions = [{
     },
     correctAnswer: "c"
 }]; 
-// איך אני עובר ילד ילד של answers

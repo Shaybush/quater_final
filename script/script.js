@@ -1,20 +1,11 @@
-// המבורגר
-// const bar = document.getElementById("burger");
 const bar = document.querySelector("#burger");
 
-// התפריט הרגיל
 let nav = document.querySelector("#navbar");
-// סגירה של דיב צדדי פרסומת
 let close_btn = document.querySelector("#close_btn");
-// פתיחה של מידע נוסף
 let more_Information = document.querySelector("#id_details_show");
-// אם המבורגר הופיע
 if (bar != null) {
-  // תחכה עד שיהיה קליק עליו
   bar.addEventListener("click", () => {
     console.log("click");
-    // אחרי שלחצת עליו תוסיף לנאב בר אקטיב
-    // יופיע באנימציה מאיקס לברס
     if (nav.classList.contains("active")) {
       nav.classList.remove("active");
       setTimeout(() => {

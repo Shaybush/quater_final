@@ -11,7 +11,6 @@
             arr.forEach((e) => {e.classList.add("active");})
         }
         const change_Country = () => {
-            // return rhodes,rome,budapest,paris,amsterdam - מחזיר את אובייקטים האלה כ- string
             let select_country = document.querySelector("#id_select").value;
             console.log(select_country);
             // all the contries appear
